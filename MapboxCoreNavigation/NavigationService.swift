@@ -120,7 +120,7 @@ public protocol NavigationService: CLLocationManagerDelegate, RouterDataSource, 
 @objc(MBNavigationService)
 public class MapboxNavigationService: NSObject, NavigationService {
     
-    typealias DefaultRouter = RouteController
+    typealias DefaultRouter = LegacyRouteController
     
     /**
      The default time interval before beginning simulation when the `.onPoorGPS` simulation option is enabled.
